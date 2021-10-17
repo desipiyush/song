@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>body {
+        background         : url(ghost.jpg);
+        background-size    : 100%;
+        background-position: center;
+        background-repeat  : no-repeat;
+        background-size    : cover;
+        overflow           : hidden;
+    }
+    
+    .conatainer {
+        width : 500px;
+        height: 300px;
+        margin: 200px auto;
+    }
+    
+    .glass {
+        background     : linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(5px);
+        border-radius  : 20px;
+        border         : 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow     : 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    }
+    
+    p {
+        color          : #fff;
+        font-weight    : 600;
+        text-transform : capitalize;
+        letter-spacing : 1px;
+        text-align     : center;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        min-height     : 40%;
+    }
+    
+    h1 {
+        text-align    : center;
+        text-transform: capitalize;
+        font-weight   : 900;
+        color         : brown;
+    }</style>
+    <audio id="q">
+        <source src="Vault.mp3" type="audio/mp3">
+    </audio>
+    <audio id="w">
+        <source src="shiva.mp3" type="audio/mp3">
+    </audio>
+    <div class="conatainer glass" onmouseover="a()"on onmouseout="b()">
+        <h1>piyush parjane</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id nihil ad nam pariatur vero facere officiis error
+            necessitatibus ducimus accusamus. Quisquam tempora laudantium distinctio tenetur nulla sunt, accusantium
+            assumenda itaque!</p>
+    </div>
+    <script>
+        var x = document.getElementById('q');
+
+var y = document.getElementById('w');
+
+document.write(
+
+    x.loop = true,
+
+    x.load(),
+
+    x.play())
+
+
+    </script>
+
+</body>
+
+</html>
